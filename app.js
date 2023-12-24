@@ -6,31 +6,31 @@ function addWish() {
 	if (Wish1 == null) {
 		console.log("Creating task...")
 		wishPrompt = document.getElementById('prompt-text').value;
-		Wish1 = document.getElementById('first-wish').innerHTML = wishPrompt;
+		Wish1 = document.getElementById('first-wish').innerHTML = "1. " + wishPrompt;
 		localStorage.setItem("first_w", wishPrompt)
 	} else {
 		if (Wish2 == null) {
 			console.log("Creating task...")
 			wishPrompt = document.getElementById('prompt-text').value;
-			Wish2 = document.getElementById('second-wish').innerHTML = wishPrompt;
+			Wish2 = document.getElementById('second-wish').innerHTML = "2. " + wishPrompt;
 			localStorage.setItem("second_w", wishPrompt)
 		} else {
 			if (Wish3 == null) {
 				console.log("Creating task...")
 				wishPrompt = document.getElementById('prompt-text').value;
-				Wish3 = document.getElementById('third-wish').innerHTML = wishPrompt;
+				Wish3 = document.getElementById('third-wish').innerHTML = "3. " + wishPrompt;
 				localStorage.setItem("third_w", wishPrompt)
 			} else {
 				if (Wish4 == null) {
 					console.log("Creating task...")
 					wishPrompt = document.getElementById('prompt-text').value;
-					Wish4 = document.getElementById('fourth-wish').innerHTML = wishPrompt;
+					Wish4 = document.getElementById('fourth-wish').innerHTML = "4. " + wishPrompt;
 					localStorage.setItem("fourth_w", wishPrompt)
 				} else {
 					if (Wish5 == null) {
 						console.log("Creating task...")
 						wishPrompt = document.getElementById('prompt-text').value;
-						Wish5 = document.getElementById('fifth-wish').innerHTML = wishPrompt;
+						Wish5 = document.getElementById('fifth-wish').innerHTML = "5. " + wishPrompt;
 						localStorage.setItem("fifth_w", wishPrompt)
 					}
 				}
@@ -41,26 +41,33 @@ function addWish() {
 
 function loadWish() {
 	if (localStorage.getItem("first_w") !== null) {
-		console.log("Creating task...");
-		Wish1 = document.getElementById('first-wish').innerHTML = localStorage.getItem("first_w");
+		console.log("Loading wish1...");
+		Wish1 = document.getElementById('first-wish').innerHTML = "1. " + localStorage.getItem("first_w");
 	} else {
-		console.log("У вас не задана первая хотелка!")
+		console.log("wish1 = null!")
 	}
 	if (localStorage.getItem("second_w") !== null) {
-		console.log("Creating task...");
-		Wish1 = document.getElementById('second-wish').innerHTML = localStorage.getItem("second_w");
+		console.log("Loading wish2...");
+		Wish1 = document.getElementById('second-wish').innerHTML = "2. " + localStorage.getItem("second_w");
 	} else {
-		console.log("У вас не задана вторая хотелка!")
-	} if (localStorage.getItem("third_w") !== null) {
-		console.log("Creating task...");
-		Wish1 = document.getElementById('first-wish').innerHTML = localStorage.getItem("first_w");
+		console.log("wish2 = null!")
+	} 
+	if (localStorage.getItem("third_w") !== null) {
+		console.log("Loading wish3...");
+		Wish1 = document.getElementById('third-wish').innerHTML = "3. " + localStorage.getItem("third_w");
 	} else {
-		console.log("У вас не задана первая хотелка!")
+		console.log("wish3 = null!")
 	}
 	if (localStorage.getItem("fourth_w") !== null) {
-		console.log("Creating task...");
-		Wish1 = document.getElementById('fourth-wish').innerHTML = localStorage.getItem("fourth_w");
+		console.log("Loading wish4...");
+		Wish1 = document.getElementById('fourth-wish').innerHTML = "4. " + localStorage.getItem("fourth_w");
 	} else {
-		console.log("У вас не задана вторая хотелка!")
+		console.log("wish4 = null!")
+	} 
+	if (localStorage.getItem("fifth_w") !== null) {
+		console.log("Loading wish5...");
+		Wish5 = document.getElementById('fifth-wish').innerHTML = "5. " + localStorage.getItem("fifth_w");
+	} else {
+		console.log("wish5 = null!")
 	} 
 }
