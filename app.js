@@ -1,6 +1,20 @@
 var Wish1, Wish2, Wish3, Wish4, Wish5, wishPrompt;
+var date = new Date();
+var NewYear = "31.11";
+var NowDate = date.getDate() + "." + date.getMonth();
 
 console.log("RaSka run!");
+console.log(" ");
+console.log("     <>");
+console.log("     /\\");
+console.log("    /||\\");
+console.log("   /||||\\");
+console.log("  /||||||\\");
+console.log(" /||||||||\\");
+console.log(" ");
+if (NowDate == NewYear) {
+	console.log("New year TODAY! Congralutions you!)")
+}
 
 function addWish() {
 	if (Wish1 == null) {
