@@ -18,31 +18,31 @@ if (NowDate == NewYear) {
 
 function addWish() {
 	if (Wish1 == null) {
-		console.log("Creating task...")
+		console.log("Creating wish1...")
 		wishPrompt = document.getElementById('prompt-text').value;
 		Wish1 = document.getElementById('first-wish').innerHTML = "1. " + wishPrompt;
 		localStorage.setItem("first_w", wishPrompt)
 	} else {
 		if (Wish2 == null) {
-			console.log("Creating task...")
+			console.log("Creating wish2...")
 			wishPrompt = document.getElementById('prompt-text').value;
 			Wish2 = document.getElementById('second-wish').innerHTML = "2. " + wishPrompt;
 			localStorage.setItem("second_w", wishPrompt)
 		} else {
 			if (Wish3 == null) {
-				console.log("Creating task...")
+				console.log("Creating wish3...")
 				wishPrompt = document.getElementById('prompt-text').value;
 				Wish3 = document.getElementById('third-wish').innerHTML = "3. " + wishPrompt;
 				localStorage.setItem("third_w", wishPrompt)
 			} else {
 				if (Wish4 == null) {
-					console.log("Creating task...")
+					console.log("Creating wish4...")
 					wishPrompt = document.getElementById('prompt-text').value;
 					Wish4 = document.getElementById('fourth-wish').innerHTML = "4. " + wishPrompt;
 					localStorage.setItem("fourth_w", wishPrompt)
 				} else {
 					if (Wish5 == null) {
-						console.log("Creating task...")
+						console.log("Creating wish5...")
 						wishPrompt = document.getElementById('prompt-text').value;
 						Wish5 = document.getElementById('fifth-wish').innerHTML = "5. " + wishPrompt;
 						localStorage.setItem("fifth_w", wishPrompt)

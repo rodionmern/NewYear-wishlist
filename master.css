@@ -109,6 +109,13 @@ body {
 
 			color: #FFF;
 		}
+			#prompt-text {
+				width: 200px;
+				height: 12.5;
+				color: white;
+				background-color: #101010;
+				border: none;
+			}
 			.Btns {
 				
 				height: 25px;
@@ -117,7 +124,20 @@ body {
 				display: flex;
 				justify-content: space-between;
 			}
-
+				#promptbtn {
+					width: 100px;
+					height: 12.5;
+					color: white;
+					background-color: #090909;
+					border: none;
+				}
+				#loadbtn {
+					width: 100px;
+					height: 12.5;
+					color: white;
+					background-color: #090909;
+					border: none;	
+				}
 	footer {
 		display: flex;
 		justify-content: center;
