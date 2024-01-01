@@ -15,7 +15,9 @@ console.log(" ");
 if (NowDate == NewYear) {
 	console.log("New year TODAY! Congralutions you!)")
 }
-
+else {
+	console.log("New year was passed! :(")
+}
 function addWish() {
 	if (Wish1 == null) {
 		console.log("Creating wish1...")
